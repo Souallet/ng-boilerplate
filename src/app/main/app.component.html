@@ -3,6 +3,9 @@
 >
   <div class="min-h-screen flex justify-center items-center">
     <header>
+      <div class="flex justify-end">
+        <app-language-selector></app-language-selector>
+      </div>
       <p
         class="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-emerald-500 dark:text-emerald-400 mb-3"
       >
@@ -16,7 +19,7 @@
       <div
         class="text-gray-500 dark:text-gray-400 text-lg sm:text-2xl font-normal sm:leading-10 space-y-6 mb-6"
       >
-        <p>This is a boilerplate using i18n, PWA and TailwindCSS v2.0</p>
+        <p>{{ "home.description" | translate }}</p>
       </div>
     </header>
   </div>

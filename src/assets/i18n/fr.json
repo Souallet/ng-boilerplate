@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "currentLanguage": "Français"
+  },
+  "home": {
+    "description": "Boilerplate mettant en oeuvre i18n, PWA et TailwindCSS v2.0"
+  }
+}
