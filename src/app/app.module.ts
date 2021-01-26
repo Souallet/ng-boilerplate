@@ -8,6 +8,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [AppComponent, LanguageSelectorComponent],
   imports: [
@@ -23,6 +25,7 @@ import { LanguageSelectorComponent } from './components/language-selector/langua
         deps: [HttpClient],
       },
     }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent],
