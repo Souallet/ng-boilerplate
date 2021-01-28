@@ -10,8 +10,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ThemeSelectorComponent } from './components/theme-selector/theme-selector.component';
 @NgModule({
-  declarations: [AppComponent, LanguageSelectorComponent],
+  declarations: [AppComponent, LanguageSelectorComponent, ThemeSelectorComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
